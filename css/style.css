@@ -12,11 +12,9 @@ body{
 	text-align: center;
 }
 header{
-    /* background: #000; */
     display: flex;
     justify-content: space-around;
     padding: 40px 0px;
-    /* background: white; */
 }
 .head{
 }
@@ -35,11 +33,9 @@ section table{
 }
 
     padding: 10px;
-    /* border-style: ridge; */
     border-color: #fdfdfd61;
 }
 section table tr{
-    /* padding: 10px; */
 }
 section table tr td{
     padding: 10px;
@@ -50,15 +46,8 @@ section table tr td{
 }
 
 .link{
-    /* background: #040408; */
-    /* padding: 10px; */
-    /* background: #243fff; */
-    /* border-radius: 5px; */
-    /* margin: 18px; */
 }
 .link:hover{
-    /* background: #57556980; */
-    /* opacity: 0.8; */
 }
 .link a{
     text-decoration: none;
@@ -70,7 +59,6 @@ section table tr td{
 }
 .link a:hover{
     opacity: 0.5;
-    /* color: #0f00ef; */
 }
 
 
@@ -83,14 +71,12 @@ footer{
 }
 footer ul{
     text-align: left;
-    /* padding: 10px 0px; */
 }
 footer ul li{
     list-style-type: none;
     padding: 5px 0px;
 }
 footer ul li span{
-    /* padding: 0px 10px; */
 }
 footer ul li a{
     text-decoration: none;
