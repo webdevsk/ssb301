@@ -7,8 +7,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background: black;
 	color: #e4e4e4;
-	min-width: 800px;
-	max-width: 900px;
+	width: 900px;
 	margin: auto;
 	text-align: center;
 }
@@ -32,12 +31,11 @@ section{
 section table{
 	width: 100%;
 }
-
+/*
     padding: 10px;
     border-color: #fdfdfd61;
-}
-section table tr{
-}
+}*/
+section table tr{}
 section table tr td{
     padding: 10px;
     border-style: none;
@@ -57,6 +55,7 @@ section table tr td{
     padding: 10px 20px;
     border-radius: 5px;
     transition-duration: 0.3s;
+    display: inline-block;
 }
 .link a:hover{
     opacity: 0.5;

@@ -1,0 +1,32 @@
+@media (orientation:portrait)
+{
+	td, th{width: 33.33%;}
+
+	td:nth-child(4){
+    width: 100%;
+	}
+
+	th:nth-child(4){
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	th:nth-child(5){
+		width: 100%;
+		padding: 20px 0px;
+	}
+
+	section table tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 1px groove white;
+    }
+
+    body {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+	}
+
+}
