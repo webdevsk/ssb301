@@ -1,6 +1,9 @@
 @media (orientation:portrait)
 {
-	td, th{width: 33.33%;}
+	td, th{
+		width: 33.33%;
+		padding: 2px;
+	}
 
 	td:nth-child(4){
     width: 100%;
