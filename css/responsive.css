@@ -2,7 +2,7 @@
 {
 	td, th{
 		width: 33.33%;
-		padding: 2px;
+		padding: 2px !important;
 	}
 
 	td:nth-child(4){
