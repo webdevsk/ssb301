@@ -1,41 +1,65 @@
 *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
-	font-family: 'Montserrat', sans-serif;
-	background: black;
-	color: #e4e4e4;
-	width: 900px;
-	margin: auto;
-	text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #1c1c1c;
+    color: #e4e4e4;
+    margin: auto;
+    text-align: center;
+    width: 1200px;
+    padding: 10px 100px;
 }
 header{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 40px 0px;
+    /* width: 85%; */
+    margin: auto;
+    align-items: flex-end;
 }
 .head{
 }
 .head h1{
-    padding: 40px 0px;
+    /* padding-top: 70px; */
+    /* padding: 40px; */
+    font-size: 26px;
+    font-weight: 400;
 }
 .logo{width: 150px;}
 .logo img{
     width: 100%;
 }
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 section{
     margin: auto;
+    align-items: center;
+    /* width: 1200px; */
+    margin-top: 20px;
+    padding: 50px 100px;
+    border-radius: 20px;
+    background: #1c1c1c;
+    box-shadow:  12px 12px 24px #0b0b0b, 
+             -12px -12px 24px #2d2d2d;
+    margin-bottom: 70px;
 }
 section table{
-	width: 100%;
+    width: 100%;
 }
 /*
     padding: 10px;
     border-color: #fdfdfd61;
 }*/
 section table tr{}
+section table tr:first-child{}
 section table tr td{
     padding: 10px;
     border-style: none;
@@ -69,6 +93,9 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
+    /* width: 1100px; */
+    margin: auto;
+    margin-bottom: 40px;
 }
 footer ul{
     text-align: left;
@@ -88,10 +115,47 @@ footer ul li a{
     transition-duration: 0.3s;
 }
 footer ul li a:hover{
-	opacity: 0.5;
+    opacity: 0.5;
 }
 footer ul li a i{
     color: #243fff;
     padding: 0px 5px;
 }
+.overlaybttn{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.overlaybttn a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background: #1c1c1c;
+    transition-duration: 0.3s;
+    /* box-shadow: 2px 2px 6px #0b0b0b, -2px -2px 6px #2d2d2d; */
+}
+.overlaybttn a:hover{
+    box-shadow: 2px 2px 6px #0b0b0b, -2px -2px 6px #2d2d2d;
+}
+.overlaybttn a i{
+    color: #4285F4;
+    font-size: 21px;
+}
+.overlaybttn a span{
+    padding-left: 2px;
+    font-size: 20px;
+    display: inline-block;
+}
 
+.titl{
+    width: 100%;
+    /* font-size: 34px; */
+    padding-bottom: 10px;
+}
+.titl h1{
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 30px;
+}
