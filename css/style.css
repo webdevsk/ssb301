@@ -67,6 +67,10 @@ section table tr td{
     height: 50px;
     border-color: #fdfdfd61;
 }
+section table tr td:nth-child(4)
+{
+    font-size: 12px;
+}
 
 .link{
 }
