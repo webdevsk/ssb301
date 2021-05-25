@@ -26,8 +26,14 @@
 			<h1>SSB - 301</h1>
 		</div>
 
-		<div class="overlaybttn"><a href="#bottom"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-				<span>Bottom</span></a>
+		<div class="overlaybttn">
+			<div class="themechng">
+				<label id="switch" class="switch">
+					<input type="checkbox" onchange="toggleTheme()" id="slider">
+					<span class="slider round"></span>
+				</label>
+			</div>
+			<a href="#bottom"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i><span>Bottom</span></a>
 		</div>
 		<!-- table starts here -->
 		<table>
@@ -617,7 +623,7 @@
 				<td class="link"><a href="" target="_blank">Facebook</a></td>
 			</tr> -->
 		</table>
-		<div class="overlaybttn">
+		<div style="justify-content: flex-end !important;" class="overlaybttn">
 		<a id= "bottom" href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
 				<span>Top</span></a>
 
@@ -637,7 +643,7 @@
 		</ul>
 		<ul>
 			<li>
-				<span style="color: rgb(217, 255, 0);">Covid19 Treatments from Home :</span>
+				<span>Covid19 Treatments from Home :</span>
 				<a href="https://drive.google.com/file/d/1ZZ1yyBcNEvbRV1RCyho3xe34hrQ_P_zf/view?usp=sharing" target="_blank"><i class="fa fa-cloud-download" aria-hidden="true"></i>PDF</a>
 			</li>
 			<li>
@@ -655,5 +661,39 @@
 		</ul>
 	</footer>
 
+	<!-- <script>
+		const html = document.querySelector('html');
+		html.dataset.theme = `theme-dark`;
+		function switchTheme(theme) {
+			html.dataset.theme = `theme-${theme}`;
+		}
+	</script> -->
+	<script>
+		// function to set a given theme/color-scheme
+		function setTheme(themeName) {
+			localStorage.setItem('theme', themeName);
+			document.documentElement.className = themeName;
+		}
+
+		// function to toggle between light and dark theme
+		function toggleTheme() {
+			if (localStorage.getItem('theme') === 'theme-dark') {
+				setTheme('theme-light');
+			} else {
+				setTheme('theme-dark');
+			}
+		}
+
+		// Immediately invoked function to set the theme on initial load
+		(function () {
+			if (localStorage.getItem('theme') === 'theme-dark') {
+						setTheme('theme-dark');
+						document.getElementById('slider').checked = false;
+			} else {
+						setTheme('theme-light');
+				document.getElementById('slider').checked = true;
+			}
+		})();
+	</script>
 </body>
 </html>

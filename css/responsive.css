@@ -41,7 +41,6 @@
 	    padding: 25px;
 	}
 	.overlaybttn a i, .overlaybttn a span{
-		font-size: 14px;
 	}
 
 
@@ -87,7 +86,7 @@ section {
 section table tr th {
     padding: 10px 5px;
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
 }
 section table tr td {
     width: 100%;
@@ -97,7 +96,7 @@ section table tr th:first-child, section table tr th:nth-child(2){
 	width: 50% !important;
 }
 footer ul li span, footer ul li a{
-    font-size: 10px;
+    font-size: 14px;
 }
 
 
