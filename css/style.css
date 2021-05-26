@@ -419,11 +419,17 @@ footer ul li a i{
           padding: 30px 30px;
       }
       section table tr td{
-          padding: 20px 5px;
           width: 33.33%;
+          position: relative;
+          padding: 30px 5px;
+      }
+      section table tr td::before{
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
       }
       section table tr th {
-          padding: 10px 5px;
           width: 33.33%;
       }
       section table tr td:nth-child(4), section table tr th:nth-child(4){
@@ -444,6 +450,44 @@ footer ul li a i{
           border-bottom: 1px groove white;
           padding: 25px;
       }
+      section table tr td:nth-child(4) {
+          font-size: 14px;
+          margin-top: 20px;
+          padding-bottom: 60px;
+      }
+
+      td::before{
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      td:first-child::before{
+          content: '#';
+      }
+      td:nth-child(2)::before{
+          content: 'Date';
+      }
+      td:nth-child(3)::before{
+          content: 'Subject';
+      }
+      td:nth-child(4)::before{
+          content: 'Highlighted Topic';
+          font-size: 16px;
+      }
+      td:nth-child(4)::after{
+          content: 'Video links & Assignment';
+          width: 100%;
+          font-size: 16px;
+          position: absolute;
+          top: 90%;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      section table tr:first-child{
+          display: none;
+      }
       /* .overlaybttn a i, .overlaybttn a span{
       } */
 
@@ -455,6 +499,7 @@ footer ul li a i{
       body{
           padding: 10px 40px;
       }
+
 
   }
   @media (max-width: 767px)
