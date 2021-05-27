@@ -34,6 +34,11 @@
     --switch-shadow-to: #5A616600;
 }
 
+::selection{
+    color: var(--bg-theme);
+    background-color: var(--link-theme);
+}
+
 
 *{
     padding: 0;
