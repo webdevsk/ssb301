@@ -166,7 +166,10 @@ section table tr td:nth-child(4)
         -ms-transform: scale(.9);
             transform: scale(.9);
 }
-
+.general-link{
+    text-decoration: underline;
+    color: var(--footer-link);
+}
 
 
 footer{
